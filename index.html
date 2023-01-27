@@ -225,6 +225,12 @@ html, body {
           }, 5000);
       } 
 
+      try {
+        screen.orientation.lock('landscape') ;  
+      } catch (error) {
+        console.error(error)
+      }      
+
       redirect_Page();
   </script>
 
