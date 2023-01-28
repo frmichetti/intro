@@ -5,6 +5,42 @@
   <meta charset="UTF-8">
   <title>Felipe R Michetti - Sonic intro</title>  
   
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDLZV4YG3B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QDLZV4YG3B');
+</script>
+  
+ <script>
+      // Using ES6 feature.
+     /* let redirect_Page = () => {
+          let tID = setTimeout(function () {
+              window.location.href = "https://github.com/frmichetti";
+              window.clearTimeout(tID);		// clear time out.
+          }, 5000);
+      }*/
+  
+      // Using regular methods.
+       function redirect_Page () {
+          var tID = setTimeout(function () {
+              window.location.href = "https://github.com/frmichetti";
+              window.clearTimeout(tID);		// clear time out.
+          }, 5000);
+      } 
+
+      try {
+        screen.orientation.lock('landscape') ;  
+      } catch (error) {
+        console.error(error)
+      }      
+
+      redirect_Page();
+  </script>  
+  
 <style>
 /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
 @import url(./fonts/family-actor.css);
@@ -206,42 +242,10 @@ html, body {
 }
 
     </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDLZV4YG3B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QDLZV4YG3B');
-</script>
 
     <script src="js/prefixfree.min.js"></script>
-    <script>
-      // Using ES6 feature.
-     /* let redirect_Page = () => {
-          let tID = setTimeout(function () {
-              window.location.href = "https://github.com/frmichetti";
-              window.clearTimeout(tID);		// clear time out.
-          }, 5000);
-      }*/
-  
-      // Using regular methods.
-       function redirect_Page () {
-          var tID = setTimeout(function () {
-              window.location.href = "https://github.com/frmichetti";
-              window.clearTimeout(tID);		// clear time out.
-          }, 5000);
-      } 
-
-      try {
-        screen.orientation.lock('landscape') ;  
-      } catch (error) {
-        console.error(error)
-      }      
-
-      redirect_Page();
-  </script>
+   
 
 </head>
 
